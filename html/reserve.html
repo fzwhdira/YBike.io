@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Page</title>
+    <link rel="stylesheet" href="../css/reserve.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/YBike.png" alt="">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">MENU</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="kawasako.html">KAWASAKO</a>
+              <a href="vixian.html">VIXIAN</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="reserve.html">Reserve</a>
+            </div>
+          </div>
+
+          <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>   
+    </header>
+    <main>
+        <h1>Formulir Pengisian Pemesanan</h1>
+
+        <form action="">
+            <label for="product">ID Produk</label>
+            <input type="text" name="Product ID" id="productTxt">
+
+            <label for="quantity">Jumlah Produk</label>
+            <input type="number" name="quantity" id="qty">
+
+            <label for="color">Warna Produk</label>
+            <input type="color" name="color" id="productColor">
+
+            <label for="date">Tanggal Pemesanan</label>
+            <input type="date" name="date" id="reserveDate">
+
+            <label for="email">Nama Lengkap</label>
+            <input type="text" name="name" id="nameTxt">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailTxt">
+
+            <label for="phone">Nomor Telepon</label>
+            <input type="text" name="phone" id="phoneTxt">
+
+
+            <label for="gender">Jenis Kelamin</label>
+            <p><input type="radio" name="gender" id="maleRbtn">Pria</p>
+            <label for="male"></label>
+            <p><input type="radio" name="gender" id="femaleRbtn">Wanita</p>
+            <label for="female"></label>
+
+            <label for="Address">Alamat Pemesanan</label>
+            <textarea name="address" id="addressTxt" cols="30" rows="10"></textarea>
+
+            <input type="checkbox" name="aggrement" id="aggrementBox">
+            <label for="aggrement">Syarat dan Ketentuan</label>
+          
+
+            <input type="submit" value="Kirim" id="submitBtn"> 
+        </form>
+        <script src="index.js"></script>
+    </main>
+    <footer>
+        <div class="text">
+            Copyright © 2021 YBike. Your Traveling Partner  
+        </div>
+        <div class="sosmed">
+          <a href="https://facebook.com">
+            <div class="fb">
+              <img src="../assets/fb.png" alt="">
+          </div>
+          </a>
+          <a href="https://www.instagram.com">
+            <div class="ig">
+              <img src="../assets/ig logo.png" alt="">
+          </div>
+          </a>
+      </div>
+    </footer>
+</body>
+</html>

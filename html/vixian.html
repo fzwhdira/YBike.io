@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIXIAN</title>
+    <link rel="stylesheet" href="../css/vixian.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/YBike.png" alt="">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">MENU</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="kawasako.html">KAWASAKO</a>
+              <a href="vixian.html">VIXIAN</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="reserve.html">Reserve</a>
+            </div>
+          </div>
+
+          <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>   
+    </header>
+    <main>
+      <div class="row">
+        <div class="column">
+            <div id="motor-image">
+                <img src="../assets/vix.png" alt="">
+            </div>
+        </div>
+        
+        <div class="column">
+            <h2>Yamaha Vixion</h2>
+            <p>Spesifikasi Yamaha Vixion
+                Yamaha Vixion tersedia dalam pilihan mesin Petrol di Indonesia Sport baru dari Yamaha hadir dalam 2 varian. Bicara soal spesifikasi mesin Yamaha Vixion, ini ditenagai dua pilihan mesin Petrol berkapasitas 149.8 cc. Vixion tersedia dengan transmisi Manual tergantung variannya. Vixion adalah Sport 2 seater dengan panjang 1955 mm, lebar 720 mm, wheelbase 1295 mm. serta ground clearance 165 mm.</p>
+        </div>
+
+        <div class="column">
+            <div id="motor-image">
+                <img src="../assets/vix1.png" alt="">
+            </div>
+        </div>
+        <div class="column">
+            <h2>Spesifikasi</h2>
+            <h3>Mesin</h3>
+              <ul>
+                <li>Tipe mesin : 4 langkah, SOHC, berpendingin cairan</li>
+                <li>Jumlah/posisi silinder: Silinder tunggal/tegak</li>
+                <li>Isi silinder : 149,7 cc</li>
+                <li>Diameter x langkah : 57.0 x 58.7 mm</li>
+                <li>Perbandingan kompresi : 10.4 : 1</li>
+                <li>Daya maksimum: 12.2kW/8500 rpm</li>
+                <li>Torsi maksimum: 14.5 Nm / 7500 rpm</li>
+                <li>Sistem bahan bakar : Fuel Injection</li>
+                <li>Sitem Pelumasan: Basah</li>
+                <li>Kapasitas Oli Mesin: Total = 1,15 L ; Berkala = 0,95 L; ganti Filter Oli = 1 L</li>
+                <li>Sistem starter : starter elektrik & kick starter</li>
+                <li>Tipe kopling : basah, kopling manual, multiplat</li>
+              </ul>  
+
+
+              <h3>Dimensi</h3>
+            <ul>
+                <li>P x L x T : 1925mm x 720mm x 1030mm</li>
+                <li>Jarak sumbu roda : 1300mm</li>
+                <li>Jarak terendah ke tanah : 165mm</li>
+                <li>Tinggi tempat duduk : 790mm</li>
+                <li>Berat isi : 130kg</li>
+                <li>Kapasitas tangki bensin : 12 liter</li>
+              </ul>  
+
+        </div>
+
+        <div class="column">
+            <div id="motor-image">
+                <img src="../assets/vix2.png" alt="">
+            </div>
+        </div>
+        <div class="column">
+              <h3>Kelistrikan</h3>
+              <ul>
+                  <li>Sistem pengapian : TCI</li>
+                  <li>Battery : GTZ4V / YTZ4V</li>
+                  <li>Tipe Busi: NGK / CR8E & DENSO /U24ESR-N</li>
+                </ul>  
+                
+
+                <h3>Rangka</h3>
+                <ul>
+                    <li>Rangka : Diamond</li>
+                    <li>Suspensi Depan: Teleskopik</li>
+                    <li>Suspensi Belakang : Swingarm</li>
+                    <li>Ban depan: 90 /80-17M/C (46P)</li>
+                    <li>Ban Belakang : 120/70-17M/C (58P)</li>
+                    <li>Rem Depan: Single disc brake</li>
+                    <li>Rem Belakang: Single disc brake</li>
+                  </ul>  
+            
+        </div>
+    </main>
+    <footer>
+        <div class="text">
+            Copyright © 2021 YBike. Your Traveling Partner  
+        </div>
+        <div class="sosmed">
+          <a href="https://facebook.com">
+            <div class="fb">
+              <img src="../assets/fb.png" alt="">
+          </div>
+          </a>
+          <a href="https://www.instagram.com">
+            <div class="ig">
+              <img src="../assets/ig logo.png" alt="">
+          </div>
+          </a>
+      </div>
+    </footer>
+</body>
+</html>

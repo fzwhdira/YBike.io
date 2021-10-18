@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 3%;
+    align-content: space-between;
+}
+
+.logo{
+    justify-content: center;
+    text-align: center;
+}
+
+.logo>img{
+    width: 150px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 3%;
+    align-content: space-between;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: space-around;
+}
+.sosmed img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+main{
+  background-color: #777676;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  padding: 3%;
+}
+
+.motorimg img{
+  width: 300px;
+  border: black;
+  border-radius: 5%;
+}
+
+.motorprice{
+  font-size: 24px;
+  font-weight: bold;
+}
